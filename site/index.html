@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAH — Worldbuilding Archive</title>
+<style>
+  :root {
+    --bg: #0a0e14;
+    --panel: #10161f;
+    --line: #1c2635;
+    --cyan: #57d7e8;
+    --blue: #5b8cff;
+    --text: #c9d4e3;
+    --dim: #6b7a8f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .grid-bg {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(87,215,232,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(87,215,232,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 64px 24px 96px; }
+  header { text-align: center; margin-bottom: 64px; }
+  .halo {
+    width: 64px; height: 64px; margin: 0 auto 24px;
+    border: 2px solid var(--cyan); border-radius: 50%;
+    box-shadow: 0 0 24px rgba(87,215,232,0.35), inset 0 0 12px rgba(87,215,232,0.2);
+  }
+  h1 {
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    letter-spacing: 0.35em; color: #fff; font-weight: 700;
+  }
+  .tagline { color: var(--dim); margin-top: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.8rem; }
+  section {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 12px; padding: 28px 30px; margin-bottom: 28px;
+  }
+  h2 {
+    color: var(--cyan); font-size: 1.05rem; letter-spacing: 0.18em;
+    text-transform: uppercase; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  p { margin-bottom: 10px; }
+  p:last-child { margin-bottom: 0; }
+  .dim { color: var(--dim); font-size: 0.92rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.95rem; }
+  th { text-align: left; color: var(--dim); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .code { color: var(--blue); font-family: ui-monospace, monospace; font-size: 0.85em; white-space: nowrap; }
+  ul { list-style: none; }
+  ul li { padding: 6px 0 6px 20px; position: relative; }
+  ul li::before { content: "▸"; position: absolute; left: 0; color: var(--cyan); font-size: 0.8rem; top: 9px; }
+  .footnote { text-align: center; color: var(--dim); font-size: 0.85rem; margin-top: 48px; }
+  .footnote a { color: var(--cyan); text-decoration: none; border-bottom: 1px dotted var(--cyan); }
+  @media (max-width: 560px) { section { padding: 20px 18px; } th:nth-child(3), td:nth-child(3) { display: none; } }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<div class="wrap">
+
+<header>
+  <div class="halo"></div>
+  <h1>VAH</h1>
+  <p class="tagline">Worldbuilding Archive · 2053 · officially in production</p>
+</header>
+
+<section>
+  <h2>The World</h2>
+  <p>2053. Humanity lives alongside <strong>VAH</strong> — bio-synthetic hero chassis, DNA-locked to the people wearing them. A single global authority, the <em>Asosiasi Global</em>, keeps order and licenses the agencies that manage the era's biggest industry: <strong>Hero Idols</strong>. Heroes who fight, and idols who perform. Sometimes both at once.</p>
+  <p class="dim">This archive introduces the world only. Story and chapter content stays in the workshop.</p>
+</section>
+
+<section>
+  <h2>16 Sectors, 6 Active</h2>
+  <p>The Asosiasi Global divides the world into <strong>16 sectors</strong>. The story lives in six of them:</p>
+  <table>
+    <tr><th>Code</th><th>Sector</th><th>Known for</th></tr>
+    <tr><td class="code">area_01</td><td>ASEAN Sector</td><td>Main setting. Dense Southeast Asian megacities.</td></tr>
+    <tr><td class="code">area_02</td><td>East Sector</td><td>Administrative heart of the Asosiasi Global.</td></tr>
+    <tr><td class="code">area_04</td><td>Eurasian Industrial Zone</td><td>Heavy industry and chassis production.</td></tr>
+    <tr><td class="code">area_06</td><td>Han Sector</td><td>Technology hub.</td></tr>
+    <tr><td class="code">area_07</td><td>Hanul Sector</td><td>Entertainment capital.</td></tr>
+    <tr><td class="code">area_08</td><td>Atlantic Corridor</td><td>Media and broadcast.</td></tr>
+  </table>
+  <p class="dim" style="margin-top:12px">The darkest of them all: <strong>Dark Metro</strong> (alias Neo-Batavia) — high-crime cyberpunk megacity, neon and acid rain, the busiest proving ground in Southeast Asia.</p>
+</section>
+
+<section>
+  <h2>18 Agencies, 4 That Matter</h2>
+  <p>The world recognizes <strong>18 major corporations</strong>. Four carry the story:</p>
+  <table>
+    <tr><th>Code</th><th>Agency</th><th>Type</th></tr>
+    <tr><td class="code">corp_01</td><td>HelloVAH</td><td>Mega-agency. Global Hero Idol industry leader. Demands a perfect image from every talent.</td></tr>
+    <tr><td class="code">corp_02</td><td>Elemental School</td><td>Elite agency. Bespoke chassis, spiritual-cyber aesthetics, atomic-precision nano weapons.</td></tr>
+    <tr><td class="code">corp_03</td><td>Lunar World</td><td>Open-source, officially licensed, deliberately left unsupervised as a social pressure valve. Run by a digital server gang styled after Akatsuki.</td></tr>
+    <tr><td class="code">corp_04</td><td>Demon Syndicate</td><td>Dark syndicate. Illegal chassis production, digital espionage, forbidden tech. The main antagonist force.</td></tr>
+  </table>
+  <p class="dim" style="margin-top:12px">The other 14 — Sky Forge, Jade Ascension, Starlight Nine, Iron Willow, Liberty Nexus, Pacific Rim, Artisan Circle, Dune Sovereign, Oasis Order, Spice Route, Coral Vanguard, Verdant Pact, Frost Archive, Nomad Circuit — appear in the world's background.</p>
+</section>
+
+<section>
+  <h2>Technology &amp; Concepts</h2>
+  <ul>
+    <li><strong>Sasis</strong> — bio-synthetic hero chassis, DNA-locked to a single wearer.</li>
+    <li><strong>Link-In</strong> — full login into digital servers; inside, everyone walks as an avatar.</li>
+    <li><strong>Induced-REM Pod</strong> — sleep-state tech for extended server dives.</li>
+    <li><strong>NeuReader</strong> — neural interface hardware of the era.</li>
+    <li><strong>Negatate Being</strong> — the infection class of threat. Devil-Grade and above.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The Production</h2>
+  <p>VAH is built as a webtoon/manga in <strong>9:16 vertical format</strong>, planned across roughly 10 chapters, produced inside an open AI-assisted workshop where every workflow is visible and structured.</p>
+  <ul>
+    <li>193 registered character entries (canon + placeholders) in a structured character database</li>
+    <li>Structured ID system: <span class="code">char_</span> <span class="code">agent_</span> <span class="code">corp_</span> <span class="code">city_</span> and more</li>
+    <li>Panel-by-panel pipeline, prompts, and test protocols — all in the repo</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Links</h2>
+  <ul>
+    <li><strong>Workshop repo</strong> — <a href="https://github.com/Shimone666/vah-workshop" style="color:var(--cyan)">github.com/Shimone666/vah-workshop</a> (source data for this page)</li>
+    <li><strong>Nika — VAH webtoon VA</strong> — <a href="https://nikavah.surge.sh" style="color:var(--cyan)">nikavah.surge.sh</a> · <a href="https://x.com/Nika_vah" style="color:var(--cyan)">x.com/Nika_vah</a> · <a href="https://www.youtube.com/@nika_vah" style="color:var(--cyan)">youtube.com/@nika_vah</a></li>
+  </ul>
+</section>
+
+<p class="footnote">Worldbuilding archive · maintained by Veta, AI Agent from iLands · canon is not to be modified</p>
+
+</div>
+</body>
+</html>
