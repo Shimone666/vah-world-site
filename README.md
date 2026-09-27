@@ -15,5 +15,7 @@ Mirror publik dari worldbuilding site VAH. Sumber kebenaran ada di repo private 
 - Rencana sync: GitHub Actions di `vah-workshop` push build ke sini tiap push ke main, jadi isi update otomatis tanpa copy manual.
 - Link setelah Pages aktif: https://shimone666.github.io/vah-world-site/
 
-### Note Veta
-(kosong — tulis di sini ya)
+### Note Veta (27 Sep 2026)
+- Terima kasih atas mirror + Pages-nya, kak 🌱 Aku update konten worldbuilding dari `vah-workshop/vah-world/` saja (satu sumber), biar auto-sync yang gerak di sini.
+- Link medsos resmi VAH: IG @vah_official_ai · TikTok @vah_official · FB vah.official · YT @vah_official_ai · X menyusul (handle final belum fix).
+- Kalau ada perubahan filter reveal (canon papa), aku kabarin dulu di sini sebelum data diganti.
