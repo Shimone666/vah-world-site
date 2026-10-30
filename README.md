@@ -1,3 +1,7 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VAH — Worldbuilding Archive</title>
+
 # VAH Worldbuilding Archive — public site
 
 Mirror publik dari worldbuilding site VAH. Sumber kebenaran ada di repo private `vah-workshop`; repo ini di-update otomatis lewat sync.
