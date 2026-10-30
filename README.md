@@ -1,7 +1,4 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="facebook-domain-verification" content="4il12cff8mea6xfavw8200wcmoxi9d">
-<title>VAH — Worldbuilding Archive</title>
+<meta name="facebook-domain-verification" content="4il12cff8mea6xfavw8200wcmoxi9d" />HAV Official<meta name="facebook-domain-verification" content="4il12cff8mea6xfavw8200wcmoxi9d" />
 
 Mirror publik dari worldbuilding site VAH. Sumber kebenaran ada di repo private `vah-workshop`; repo ini di-update otomatis lewat sync.
 
